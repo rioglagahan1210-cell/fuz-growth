@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
-    // 1. Mengabaikan error TypeScript saat proses build agar deployment berhasil
+    // Mengizinkan proses produksi selesai meskipun ada error TypeScript
     ignoreBuildErrors: true,
   },
   eslint: {
-    // 2. Mengabaikan error ESLint (peringatan standar penulisan kode) agar proses lebih lancar
+    // Mengizinkan proses produksi selesai meskipun ada error linting (gaya penulisan)
     ignoreDuringBuilds: true,
   },
 };
